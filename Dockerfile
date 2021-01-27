@@ -1,9 +1,9 @@
-FROM alpine:3.12.1
+FROM alpine:3.13.0
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 ENV JAVA_HOME=/usr/lib/jvm/zulu-11
-RUN ZULU_ARCH=zulu11.43.55-ca-jdk11.0.9.1-linux_musl_x64.tar.gz && \
+RUN ZULU_ARCH=zulu11.45.27-ca-jdk11.0.10-linux_musl_x64.tar.gz && \
     INSTALL_DIR=$( dirname $JAVA_HOME ) && \
     BIN_DIR=/usr/bin && \
     MAN_DIR=/usr/share/man/man1 && \
